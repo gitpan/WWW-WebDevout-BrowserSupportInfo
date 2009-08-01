@@ -3,7 +3,7 @@ package WWW::WebDevout::BrowserSupportInfo;
 use warnings;
 use strict;
 
-our $VERSION = '0.01';
+our $VERSION = '0.0102';
 
 use Carp;
 use URI;
@@ -23,7 +23,7 @@ sub new {
 
     %args = (
         LONG        => 0,
-        BROWSERS    => [ qw(IE6 IE7 FX1_5 FX2 OP8 OP9 KN3_5 SF2) ],
+        BROWSERS    => [ qw(IE6 IE7 IE8 FX1_5 FX2 FX3 OP8 OP9 KN3_5 SF2) ],
         %args,
     );
     #IE6-IE7-FX1_5-FX2-OP8-OP9-KN3_5-SF2
@@ -102,8 +102,10 @@ sub make_long_name {
     my %long_name_for = (
         IE6     => 'Internet Explorer 6',
         IE7     => 'Internet Explorer 7',
+        IE8     => 'Internet Explorer 7',
         FX1_5   => 'FireFox 1.5',
         FX2     => 'FireFox 2',
+        FX3     => 'FireFox 3',
         OP8     => 'Opera 8',
         OP9     => 'Opera 9',
         KN3_5   => 'Konqueror 3.5',
@@ -274,8 +276,10 @@ list below. B<Defaults to:> C<0>.
 
         IE6     => 'Internet Explorer 6',
         IE7     => 'Internet Explorer 7',
+        IE8     => 'Internet Explorer 8',
         FX1_5   => 'FireFox 1.5',
         FX2     => 'FireFox 2',
+        FX3     => 'FireFox 3',
         OP8     => 'Opera 8',
         OP9     => 'Opera 9',
         KN3_5   => 'Konqueror 3.5',
@@ -288,7 +292,7 @@ list below. B<Defaults to:> C<0>.
 B<Optional>. Takes an arrayref as a value. The elements in that arrayref
 are browser codes, for which to get the information from WebDevout. See
 description for C<long> constructor's argument for possible browser codes.
-B<Defaults to:> C<[ qw(IE6 IE7 FX1_5 FX2 OP8 OP9 KN3_5 SF2) ]> (all
+B<Defaults to:> C<[ qw(IE6 IE7 IE8 FX1_5 FX2 FX3 OP8 OP9 KN3_5 SF2) ]> (all
 browsers supported by WebDevout)
 
 =head3 ua_args

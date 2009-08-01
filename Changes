@@ -1,5 +1,8 @@
 Revision history for WWW-WebDevout-BrowserSupportInfo
 
-0.01    Date/time
+0.0102  July 31, 2009
+        Updated to include new browsers as support for them was added via API
+
+0.01    Date/time [forgotten[
         First version, released on an unsuspecting world.
 

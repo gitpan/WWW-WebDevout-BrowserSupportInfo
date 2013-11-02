@@ -3,7 +3,7 @@ package WWW::WebDevout::BrowserSupportInfo;
 use warnings;
 use strict;
 
-our $VERSION = '0.0102';
+our $VERSION = '0.0103';
 
 use Carp;
 use URI;
@@ -195,6 +195,8 @@ sub browsers {
 1;
 
 __END__
+
+=encoding utf8
 
 =head1 NAME
 
